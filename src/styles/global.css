@@ -1,0 +1,79 @@
+:root {
+  --white: white;
+  --text: #403c4a;
+  --text-muted: #78757f;
+  --text-pink: #c10b7e;
+  --yellow: #ffe742;
+  --yellow-dark: #ddc62c;
+  --pink: #ff87d4;
+  --pink-dark: #c10b7e;
+  --blue: #87fffb;
+  --blue-dark: #63ddd9;
+  --black: #171321;
+  --gray-light: #d4d0e0;
+  --font-family: Mallory, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  --background: var(--white);
+  --foreground: var(--black);
+}
+
+.dark {
+  --blue-dark: #0d314a;
+  --pink-dark: #6d114c;
+  --text: #b1acb9;
+  --text-muted: #aba7b5;
+  --background: var(--black);
+  --foreground: var(--white);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: var(--text);
+  font-family: var(--font-family);
+  font-weight: 400;
+  line-height: 1.45;
+  margin: 0;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--foreground);
+  font-weight: 900;
+  line-height: 1.1;
+  transition: 200ms color linear;
+}
+
+a {
+  color: var(--text-pink);
+  font-weight: 500;
+}
+
+strong,
+b {
+  font-weight: 500;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
